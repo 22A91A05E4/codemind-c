@@ -3,16 +3,16 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    while(n--)
+    while(n!=0)
     {
-    int t,x;
-    scanf("%d%d",&t,&x);
-    if(x<=3)
+    int x;
+    scanf("%d",&x);
+    if(x<3)
     {
         printf("LIGHT
 ");
     }
-    else if(x<=7)
+    else if(x>=3 && x<7)
     {
         printf("MODERATE
 ");
@@ -22,5 +22,6 @@ int main()
         printf("HEAVY
 ");
     }
+    n--;
     }
 }
